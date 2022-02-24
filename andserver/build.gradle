@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 31
+    defaultConfig {
+        minSdk 14
+        targetSdk 31
+        versionCode 1
+        versionName "1.0.0-RELEASE"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    implementation "com.yanzhenjie.apache:httpcore:4.4.14.1"
+    implementation "com.yanzhenjie.apache:fileupload:1.4"
+}
